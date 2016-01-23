@@ -1,28 +1,88 @@
-*, html, body {
+*, html, body { /* base settings */
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
 
+/* The overall board holder */
 .checkers-holder {
   position: relative;
   border: 0;
-  width:540px;
+  width:630px;
   height: 600px;
 }
 
+/* The actual checkers board itself */
 .checkers-holder__board {
-  border: 1px solid grey;
+  position: relative;
+  border: 1px dashed grey;
   display: inline-block;
   float: left;
+  height: 100%;
   width: 350px;
   margin: 10px;
 }
+.checkers-holder__board .checkers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.checkers-holder__board .checkers .checkers__board-row {
+  height: 5%;
+  width: 100%;
+}
+.checkers-holder__board .checkers .checkers__board-row .checkers__board-row__cell {
+  display: inline;
+  float: left;
+  height: 100%;
+  width: 10%;
+  border: 1px dashed grey;
+}
 
+/* Right hud of the checkers game */
 .checkers-holder__hud {
-  border: 1px solid grey;
+  border: 0;
   display: inline-block;
   float: left;
-  width: 150px;
+  width: 240px;
   margin: 10px;
+  height: 100%;
+}
+.checkers-holder__hud__preview { /* Preview of the next playable piece */
+  border: 1px dashed grey;
+  width: 100%;
+  height: 20%;
+
+}
+.checkers-holder__hud__preview .preview-table {
+}
+.checkers-holder__hud__preview .preview-table .preview-table__row {
+  height: 25%;
+  width: 100%;
+}
+.checkers-holder__hud__preview .preview-table .preview-table__row .preview-table__row__cell {
+  height: 100%;
+  width: 12.5%;
+  display: inline;
+  float: left;
+  border: 1px dashed grey;
+}
+.checkers-holder__hud__buttons { /* Section of buttons and whats pressed */
+  width: 100%;
+  height: 10%;
+}
+.checkers-holder__hud__buttons .checkers-holder__hud__buttons__button:first-child {
+  border-right: 1px dashed lightgrey;
+}
+.checkers-holder__hud__buttons .checkers-holder__hud__buttons__button {
+  width: 25%;
+  height: 100%;
+  line-height: 100%;
+  display: inline;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 20px;
 }
