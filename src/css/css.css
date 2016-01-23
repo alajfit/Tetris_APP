@@ -1,0 +1,28 @@
+*, html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.checkers-holder {
+  position: relative;
+  border: 0;
+  width:540px;
+  height: 600px;
+}
+
+.checkers-holder__board {
+  border: 1px solid grey;
+  display: inline-block;
+  float: left;
+  width: 350px;
+  margin: 10px;
+}
+
+.checkers-holder__hud {
+  border: 1px solid grey;
+  display: inline-block;
+  float: left;
+  width: 150px;
+  margin: 10px;
+}

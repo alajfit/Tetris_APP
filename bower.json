@@ -1,0 +1,18 @@
+{
+  "name": "tetris_app",
+  "description": "Checkers game designed with angular",
+  "main": "index.js",
+  "authors": [
+    "Alan J. Fitzpatrick"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "tetris",
+    "angular"
+  ],
+  "homepage": "https://github.com/alajfit/Tetris_APP",
+  "moduleType": [],
+  "devDependencies": {
+    "angular": "~1.4.9"
+  }
+}
